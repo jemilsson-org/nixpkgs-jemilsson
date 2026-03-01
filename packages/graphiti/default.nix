@@ -1,4 +1,6 @@
-{ pkgs, lib, fetchFromGitHub, python, buildPythonApplication, python3Packages }:
+{ pkgs, lib, fetchFromGitHub, python, buildPythonApplication, 
+  neo4j, openai, pydantic, fastapi, uvicorn, httpx, click, rich, python-dotenv,
+  typing-extensions, diskcache, tenacity, azure-identity, mcp, numpy, posthog }:
 
 buildPythonApplication rec {
   pname = "graphiti-mcp";
@@ -16,7 +18,7 @@ buildPythonApplication rec {
     uv
   ];
 
-  propagatedBuildInputs = with python3Packages; [
+  propagatedBuildInputs = [
     neo4j
     openai
     pydantic
