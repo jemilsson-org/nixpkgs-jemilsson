@@ -1,6 +1,6 @@
-{ pkgs, lib, fetchFromGitHub, python3 }:
+{ pkgs, lib, fetchFromGitHub, python, buildPythonApplication, python3Packages }:
 
-python3.pkgs.buildPythonApplication rec {
+buildPythonApplication rec {
   pname = "graphiti-mcp";
   version = "0.28.1";
   format = "other";
@@ -16,7 +16,7 @@ python3.pkgs.buildPythonApplication rec {
     uv
   ];
 
-  propagatedBuildInputs = with python3.pkgs; [
+  propagatedBuildInputs = with python3Packages; [
     neo4j
     openai
     pydantic
@@ -46,21 +46,21 @@ python3.pkgs.buildPythonApplication rec {
 
   installPhase = ''
     mkdir -p $out/bin
-    mkdir -p $out/lib/python${python3.pythonVersion}/site-packages
+    mkdir -p $out/lib/python${python.pythonVersion}/site-packages
     
     # Copy the core graphiti module (required by mcp_server)
-    cp -r graphiti_core $out/lib/python${python3.pythonVersion}/site-packages/
+    cp -r graphiti_core $out/lib/python${python.pythonVersion}/site-packages/
     
     # Copy the MCP server files
-    cp -r mcp_server $out/lib/python${python3.pythonVersion}/site-packages/
+    cp -r mcp_server $out/lib/python${python.pythonVersion}/site-packages/
     
     # Create the executable script
     cat > $out/bin/graphiti-mcp-server << EOF
 #!/usr/bin/env python3
 import sys
 import os
-sys.path.insert(0, '$out/lib/python${python3.pythonVersion}/site-packages')
-os.chdir('$out/lib/python${python3.pythonVersion}/site-packages/mcp_server')
+sys.path.insert(0, '$out/lib/python${python.pythonVersion}/site-packages')
+os.chdir('$out/lib/python${python.pythonVersion}/site-packages/mcp_server')
 exec(open('graphiti_mcp_server.py').read())
 EOF
     chmod +x $out/bin/graphiti-mcp-server
