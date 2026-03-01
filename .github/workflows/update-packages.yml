@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-packages:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, nixos]
     permissions:
       contents: write
       pull-requests: write
@@ -24,11 +24,6 @@ jobs:
         with:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Install OpenCode CLI
-        run: |
-          curl -fsSL https://opencode.ai/install | bash
-          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
       
       - name: Configure Git
         run: |
@@ -56,8 +51,8 @@ jobs:
           }
           EOF
           
-          # Run OpenCode with a simple test prompt first
-          opencode task "List all directories in the packages/ folder and identify which ones contain Nix package definitions (default.nix files)."
+          # Run OpenCode to update packages
+          opencode task "Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating: 1) Check the current version in default.nix, 2) Find the latest stable release from the upstream source (GitHub releases, PyPI, etc), 3) Update the version number and rev/tag in the default.nix file, 4) Use nix-prefetch-url or nix-prefetch-github to get the correct hash and update it, 5) Test the build with 'nix build .#packages.x86_64-linux.PACKAGENAME', 6) Create a commit with message 'packagename: oldversion -> newversion'. Only update to stable releases, no pre-releases or betas."
       
       - name: Create Pull Request
         if: success()
