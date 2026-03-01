@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-packages:
-    runs-on: [self-hosted, nixos, jemilsson-org]
+    runs-on: [self-hosted, nixos]
     permissions:
       contents: write
       pull-requests: write
