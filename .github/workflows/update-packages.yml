@@ -33,6 +33,10 @@ jobs:
       - name: Install OpenCode
         run: |
           pip install opencode-cli
+          # Ensure opencode is in PATH
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+          # Verify installation
+          which opencode || ls -la ~/.local/bin/ || echo "OpenCode not found in expected location"
       
       - name: Update packages with OpenCode
         env:
