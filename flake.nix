@@ -33,9 +33,7 @@
         in
           builtins.listToAttrs (map (name: {
             inherit name;
-            value = pkgs.callPackage (packageDir + "/${name}/default.nix") { 
-              inherit unstable;
-            };
+            value = pkgs.callPackage (packageDir + "/${name}/default.nix") { };
           }) validPackages)
       );
 
