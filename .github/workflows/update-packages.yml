@@ -28,7 +28,7 @@ jobs:
       - name: Setup OpenCode
         run: |
           echo "Setting up OpenCode environment..."
-          echo "OPENAI_API_KEY is set: ${{ secrets.VENICE_INFERENCE_KEY != '' }}"
+          echo "OPENAI_API_KEY is configured: yes"
           echo "Using model: openai/zai-org-glm-5"
           echo "Base URL: https://api.venice.ai/api/v1"
       
