@@ -25,35 +25,20 @@ jobs:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       
+      - name: Setup OpenCode
+        run: |
+          echo "Setting up OpenCode environment..."
+          echo "OPENAI_API_KEY is set: ${{ secrets.VENICE_INFERENCE_KEY != '' }}"
+          echo "Using model: openai/zai-org-glm-5"
+          echo "Base URL: https://api.venice.ai/api/v1"
+      
       - name: Run OpenCode to update packages
         uses: anomalyco/opencode/github@latest
         env:
           OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
           OPENAI_BASE_URL: https://api.venice.ai/api/v1
+          DEBUG: "true"
         with:
           model: openai/zai-org-glm-5
           prompt: |
-            Review all packages in the packages/ directory and update them to their latest stable versions.
-            
-            For each package:
-            1. Check the current version in default.nix
-            2. Look up the latest stable version from the upstream source
-            3. If a newer version exists, update the package definition:
-               - Update the version number
-               - Update the rev/tag for fetchFromGitHub sources  
-               - Update the hash/sha256 (you can use nix-prefetch-url or nix-prefetch-github to get correct hashes)
-            
-            Guidelines:
-            - Only update to stable releases (no pre-releases, betas, or RCs)
-            - Keep the existing package structure and options
-            - For GitHub sources, check the releases page for latest stable version
-            - For Python packages, check PyPI for latest version
-            - Skip packages with comments indicating they're pinned to specific versions
-            - Test that the updated package builds correctly with: nix build .#packages.x86_64-linux.PACKAGENAME
-            
-            Process:
-            1. Update each package that needs updating
-            2. Fix any hash mismatches by building and using the correct hash from the error
-            3. Create one commit per package with message: "packagename: oldversion -> newversion"
-            4. After all updates are complete, create a pull request titled "Automated Package Updates"
-            5. In the PR description, list all packages that were updated with their version changes
+            List the files in the packages directory and summarize what packages are present.
