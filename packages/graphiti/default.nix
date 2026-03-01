@@ -58,7 +58,7 @@ buildPythonApplication rec {
     
     # Create the executable script
     cat > $out/bin/graphiti-mcp-server << EOF
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import sys
 import os
 sys.path.insert(0, '$out/lib/python${python.pythonVersion}/site-packages')
