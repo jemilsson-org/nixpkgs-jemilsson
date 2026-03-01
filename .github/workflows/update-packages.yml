@@ -30,38 +30,23 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Install OpenCode
-        run: |
-          pip install opencode-cli
-          # Ensure opencode is in PATH
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-          # Verify installation
-          which opencode || ls -la ~/.local/bin/ || echo "OpenCode not found in expected location"
-      
       - name: Update packages with OpenCode
+        uses: anomalyco/opencode/github@latest
         env:
           OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
-          OPENAI_BASE_URL: https://api.venice.ai/api/v1
-        run: |
-          # Configure OpenCode
-          mkdir -p ~/.opencode
-          cat > ~/.opencode/config.json << EOF
-          {
-            "providers": [
-              {
-                "name": "openai",
-                "api_key_env": "OPENAI_API_KEY",
-                "base_url": "https://api.venice.ai/api/v1"
-              }
-            ],
-            "models": {
-              "default": "openai/zai-org-glm-5"
-            }
-          }
-          EOF
-          
-          # Run OpenCode to update packages
-          opencode task "Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating: 1) Check the current version in default.nix, 2) Find the latest stable release from the upstream source (GitHub releases, PyPI, etc), 3) Update the version number and rev/tag in the default.nix file, 4) Use nix-prefetch-url or nix-prefetch-github to get the correct hash and update it, 5) Test the build with 'nix build .#packages.x86_64-linux.PACKAGENAME', 6) Create a commit with message 'packagename: oldversion -> newversion'. Only update to stable releases, no pre-releases or betas."
+        with:
+          model: openai/zai-org-glm-5
+          base_url: https://api.venice.ai/api/v1
+          prompt: |
+            Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating:
+            1) Check the current version in default.nix
+            2) Find the latest stable release from the upstream source (GitHub releases, PyPI, etc)
+            3) Update the version number and rev/tag in the default.nix file
+            4) Use nix-prefetch-url or nix-prefetch-github to get the correct hash and update it
+            5) Test the build with 'nix build .#packages.x86_64-linux.PACKAGENAME'
+            6) Create a commit with message 'packagename: oldversion -> newversion'
+            
+            Only update to stable releases, no pre-releases or betas.
       
       - name: Create Pull Request
         if: success()
