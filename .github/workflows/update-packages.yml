@@ -50,14 +50,17 @@ jobs:
           EOF
         env:
           OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
-          OPENAI_BASE_URL: https://api.venice.ai/api/v1
+          OPENAI_BASE_URL: https://api.venice.ai
       
       - name: Update packages with Goose
         env:
-          OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
-          OPENAI_BASE_URL: https://api.venice.ai/api/v1
+          VENICE_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
+          VENICE_HOST: https://api.venice.ai
+          VENICE_BASE_PATH: api/v1/chat/completions
+          GOOSE_PROVIDER: openai
+          GOOSE_MODEL: zai-org-glm-5
         run: |
-          goose run --no-session --provider openai --model zai-org-glm-5 -t "Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating: 1) Check the current version in default.nix, 2) Find the latest stable release from the upstream source (GitHub releases, PyPI, etc), 3) Update the version number and rev/tag in the default.nix file, 4) Use nix-prefetch-url or nix-prefetch-github to get the correct hash and update it, 5) Test the build with 'nix build .#packages.x86_64-linux.PACKAGENAME', 6) Create a commit with message 'packagename: oldversion -> newversion'. Only update to stable releases, no pre-releases or betas."
+          goose run --no-session -t "Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating: 1) Check the current version in default.nix, 2) Find the latest stable release from the upstream source (GitHub releases, PyPI, etc), 3) Update the version number and rev/tag in the default.nix file, 4) Use nix-prefetch-url or nix-prefetch-github to get the correct hash and update it, 5) Test the build with 'nix build .#packages.x86_64-linux.PACKAGENAME', 6) Create a commit with message 'packagename: oldversion -> newversion'. Only update to stable releases, no pre-releases or betas."
       
       - name: Create Pull Request
         if: success()
