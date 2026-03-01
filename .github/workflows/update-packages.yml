@@ -37,6 +37,7 @@ jobs:
           OPENAI_BASE_URL: https://api.venice.ai/api/v1
         with:
           model: openai/zai-org-glm-5
+          use_github_token: false
           prompt: |
             Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating:
             1) Check the current version in default.nix
