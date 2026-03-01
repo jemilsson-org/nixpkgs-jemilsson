@@ -1,0 +1,55 @@
+name: Build Test - All Packages
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  check:
+    runs-on: [self-hosted, nixos]
+    outputs:
+      packages: ${{ steps.get-packages.outputs.packages }}
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Check flake
+      run: |
+        nix --extra-experimental-features 'nix-command flakes' flake check --no-build
+      env:
+        NIX_CONFIG: |
+          experimental-features = nix-command flakes
+          substituters = https://cache.nixos.org/
+          trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+    
+    - name: Get package list
+      id: get-packages
+      run: |
+        # Get all package names for x86_64-linux
+        packages=$(nix --extra-experimental-features 'nix-command flakes' eval --json '.#packages.x86_64-linux' --apply 'builtins.attrNames')
+        echo "packages=$packages" >> $GITHUB_OUTPUT
+        echo "Found packages: $packages"
+
+  build:
+    needs: check
+    runs-on: [self-hosted, nixos]
+    strategy:
+      matrix:
+        package: ${{ fromJson(needs.check.outputs.packages) }}
+      fail-fast: false
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build ${{ matrix.package }}
+      run: |
+        nix --extra-experimental-features 'nix-command flakes' build \
+          '.#packages.x86_64-linux.${{ matrix.package }}' \
+          --no-link \
+          --print-build-logs
+      env:
+        NIX_CONFIG: |
+          experimental-features = nix-command flakes
+          substituters = https://cache.nixos.org/
+          trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
