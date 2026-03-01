@@ -31,7 +31,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
           OPENAI_BASE_URL: https://api.venice.ai/api/v1
         with:
-          model: venice/zai-org-glm-5
+          model: openai/zai-org-glm-5
           prompt: |
             Review all packages in the packages/ directory and update them to their latest stable versions.
             
