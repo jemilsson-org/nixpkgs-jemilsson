@@ -11,7 +11,7 @@ buildPythonApplication rec {
     owner = "getzep";
     repo = "graphiti";
     rev = "v${version}";
-    hash = "";  # Will be filled by nix
+    hash = "sha256-/juKe2R+H938IW2FLsr74o39GSW8T713cFvtJnKHUCQ=";
   };
 
   nativeBuildInputs = with pkgs; [
