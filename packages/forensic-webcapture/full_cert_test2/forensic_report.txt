@@ -1,0 +1,62 @@
+FORENSIC WEB CAPTURE REPORT
+===========================
+
+Capture ID: 4a8c92c1-52cc-43c5-832d-5b98773b26cf
+Date/Time (UTC): 2026-02-20T15:57:18.879261+00:00
+Date/Time (Local): 2026-02-20T16:57:18.879270
+Target URL: https://www.dn.se/
+Hostname: www.dn.se
+
+TLS CERTIFICATE VALIDATION
+--------------------------
+⚠ No TLS certificate (HTTP connection)
+
+DNS RESOLUTION
+--------------
+A: 199.232.173.91
+AAAA: 2a04:4e42:6b::347
+
+BROWSER SPOOFING
+----------------
+Profile: chrome
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+
+PAGE CAPTURE
+------------
+Status: 200
+Content Length: 464343 bytes
+Server Date: Fri, 20 Feb 2026 15:57:19 GMT
+Response Time: 0.15 seconds
+
+FILES CAPTURED
+--------------
+Total Files: 120
+Assets: 91
+Screenshot: No
+
+INTEGRITY VERIFICATION
+---------------------
+SHA256 hashes: SHA256SUMS.txt
+SHA512 hashes: SHA512SUMS.txt
+
+To verify integrity:
+  cd full_cert_test2
+  sha256sum -c SHA256SUMS.txt
+  sha512sum -c SHA512SUMS.txt
+
+CHAIN OF CUSTODY
+---------------
+This capture was performed using forensic best practices:
+1. TLS certificates preserved for cryptographic proof of origin
+2. Complete HTTP headers and response captured
+3. Browser spoofing used to obtain authentic server response
+4. All files hashed with SHA256 and SHA512
+5. Timestamps preserved at multiple levels
+
+The TLS certificate provides cryptographic proof that:
+- Content originated from the legitimate server
+- Server was authorized by a Certificate Authority
+- Connection was encrypted and authenticated
+- No man-in-the-middle attack occurred
+
+Generated: 2026-02-20T16:57:38.665382

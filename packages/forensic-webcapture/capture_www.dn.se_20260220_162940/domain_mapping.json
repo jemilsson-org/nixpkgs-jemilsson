@@ -1,0 +1,724 @@
+{
+  "static.bonniernews.se": [
+    {
+      "original_url": "https://static.bonniernews.se/ba/09eb0ac0-5b58-4775-b954-13d3e62708ee.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_0_static_bonniernews_se_ba_09eb0ac0-5b58-4775-b954-13d3e62708ee.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/7faf043c-2122-4e42-962b-9ea29791e43f.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_1_static_bonniernews_se_ba_7faf043c-2122-4e42-962b-9ea29791e43f.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/b90a164f-8392-4343-ae8b-0020195597da.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_2_static_bonniernews_se_ba_b90a164f-8392-4343-ae8b-0020195597da.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/4526feae-39ac-44d8-82a1-547872b6735a.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_3_static_bonniernews_se_ba_4526feae-39ac-44d8-82a1-547872b6735a.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/o6wawjpa5znrshubyjb53xt376qsfl5jkjpzrnshgr5zz23atesa-1003x3000.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_4_static_bonniernews_se_gcs_bilder_dn-author_o6wawjpa5znrshubyjb53xt376qsfl5jkjpzrnshgr5zz23atesa-1003x3000.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/78803ee1-2fee-482f-b32f-9f7d4c61edd2.jpeg?io=1&auto=webp&quality=80&width=319&crop=16:9,smart",
+      "local_path": "assets/image_5_static_bonniernews_se_ba_78803ee1-2fee-482f-b32f-9f7d4c61edd2.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/cce487fd-a50d-45a5-b7a5-d6d93b954243.jpeg?io=1&auto=webp&quality=80&width=319&crop=16:9,smart",
+      "local_path": "assets/image_6_static_bonniernews_se_ba_cce487fd-a50d-45a5-b7a5-d6d93b954243.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/47fe5486-638c-4cbc-a432-f3ae3967aa6b.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_7_static_bonniernews_se_ba_47fe5486-638c-4cbc-a432-f3ae3967aa6b.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/7c835dd6-aaba-46cd-9f53-d1a08f8fd9d9.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_8_static_bonniernews_se_ba_7c835dd6-aaba-46cd-9f53-d1a08f8fd9d9.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/cfcdn-screen9/img/S/u/SuMYsUDq-39tYmXxJD7Edg_image/image.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_9_static_bonniernews_se_cfcdn-screen9_img_S_u_SuMYsUDq-39tYmXxJD7Edg_image_image.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/cfcdn-screen9/img/t/-/t-kGkCi1Bej3GcPgFAl5WA_image/image.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_10_static_bonniernews_se_cfcdn-screen9_img_t_-_t-kGkCi1Bej3GcPgFAl5WA_image_image.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/cfcdn-screen9/img/c/k/cky_OqBo2-1FS0RPZw9Hdg_image/image.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_11_static_bonniernews_se_cfcdn-screen9_img_c_k_cky_OqBo2-1FS0RPZw9Hdg_image_image.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/cfcdn-screen9/img/Y/w/Yw1SdqxQFZbiqESqNVQhKA_image/image.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_12_static_bonniernews_se_cfcdn-screen9_img_Y_w_Yw1SdqxQFZbiqESqNVQhKA_image_image.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/cfcdn-screen9/img/5/k/5kPW-wFW4NWQrNhC588e_g_image/image.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_13_static_bonniernews_se_cfcdn-screen9_img_5_k_5kPW-wFW4NWQrNhC588e_g_image_image.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/51e835a8-0aa0-4936-9215-38d73a80dd00.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_14_static_bonniernews_se_ba_51e835a8-0aa0-4936-9215-38d73a80dd00.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/fe86cf55-c2b7-4caf-b929-7cb6fd966b83.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_15_static_bonniernews_se_ba_fe86cf55-c2b7-4caf-b929-7cb6fd966b83.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/3qtmdhkg7ef74ngejssk24qknt5nbdswjn5yv5l43gnkf5ltulxa-626x1594.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_16_static_bonniernews_se_gcs_bilder_dn-author_3qtmdhkg7ef74ngejssk24qknt5nbdswjn5yv5l43gnkf5ltulxa-626x1594.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/3a4036a6-5cc7-4bfd-84b3-ea7ca42c993a.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_17_static_bonniernews_se_ba_3a4036a6-5cc7-4bfd-84b3-ea7ca42c993a.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/e924d59b-3a09-446e-9828-da63138c122e.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_18_static_bonniernews_se_ba_e924d59b-3a09-446e-9828-da63138c122e.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/bzl75jq6dgb3wj6os77kqiimjshfwyy3aeb3azyxrz4nrm555xjq-441x1008.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_19_static_bonniernews_se_gcs_bilder_dn-author_bzl75jq6dgb3wj6os77kqiimjshfwyy3aeb3azyxrz4nrm555xjq-441x1008.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/89759705-f4c2-4464-af04-1ec666b57000.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_20_static_bonniernews_se_ba_89759705-f4c2-4464-af04-1ec666b57000.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/f8ad9d94-7c54-422a-a359-42719cebc2b4.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_21_static_bonniernews_se_ba_f8ad9d94-7c54-422a-a359-42719cebc2b4.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/vvdrhe2yzro4wzd5sbgxxdxoq66yfkox2n4ckf4trvpyprdutt6q-1137x3000.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_22_static_bonniernews_se_gcs_bilder_dn-author_vvdrhe2yzro4wzd5sbgxxdxoq66yfkox2n4ckf4trvpyprdutt6q-1137x3000.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/a2d94f8a-1797-469a-a082-1de24c23d320.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_23_static_bonniernews_se_ba_a2d94f8a-1797-469a-a082-1de24c23d320.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/aead974e-baf3-4453-926b-74e0fa520c1f.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_24_static_bonniernews_se_ba_aead974e-baf3-4453-926b-74e0fa520c1f.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/f7898782-5bca-41a8-8595-ff80e9615144.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_25_static_bonniernews_se_ba_f7898782-5bca-41a8-8595-ff80e9615144.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/b0142fa7-a3a8-4073-b1a2-834381ce3475.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_26_static_bonniernews_se_ba_b0142fa7-a3a8-4073-b1a2-834381ce3475.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/e13d30fc-5d76-4d5a-8156-fa4edd72ac92.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_27_static_bonniernews_se_ba_e13d30fc-5d76-4d5a-8156-fa4edd72ac92.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/c44e6c6d-850d-4c24-b3b5-6ed75fbfd6a3.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_28_static_bonniernews_se_ba_c44e6c6d-850d-4c24-b3b5-6ed75fbfd6a3.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/e1074155-9226-48f0-bebd-6cef12b6ad4e.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_29_static_bonniernews_se_ba_e1074155-9226-48f0-bebd-6cef12b6ad4e.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/708e9b7f-ed00-4298-9ad3-1e435db4cd54.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_30_static_bonniernews_se_ba_708e9b7f-ed00-4298-9ad3-1e435db4cd54.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/473f8ae6-1618-451a-8e78-87424b2996b5.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_31_static_bonniernews_se_ba_473f8ae6-1618-451a-8e78-87424b2996b5.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/f8de1b4b-3a84-4291-a087-42d06ae00d24.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_32_static_bonniernews_se_ba_f8de1b4b-3a84-4291-a087-42d06ae00d24.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/33bb70a9-673f-4293-b4ec-e7dafa53df4d.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_33_static_bonniernews_se_ba_33bb70a9-673f-4293-b4ec-e7dafa53df4d.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/1c5168af-ce4f-4519-a4bb-0ffa38d6ca82.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_34_static_bonniernews_se_ba_1c5168af-ce4f-4519-a4bb-0ffa38d6ca82.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/682aec6b-9542-4b7f-9fe1-5f0e3f19769a.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_35_static_bonniernews_se_ba_682aec6b-9542-4b7f-9fe1-5f0e3f19769a.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/8547071a-e3fa-46b2-8fcc-e83f29250100.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_36_static_bonniernews_se_ba_8547071a-e3fa-46b2-8fcc-e83f29250100.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/7ea1552e-5424-432f-a6aa-918e2447f077.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_37_static_bonniernews_se_ba_7ea1552e-5424-432f-a6aa-918e2447f077.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/c8d7610f-d59f-46af-94a9-267f467daa5a.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_38_static_bonniernews_se_ba_c8d7610f-d59f-46af-94a9-267f467daa5a.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/41df6d5f-fc70-40ae-9853-c496009514ee.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_39_static_bonniernews_se_ba_41df6d5f-fc70-40ae-9853-c496009514ee.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/414d278c-9104-4f73-ab1a-62afc2135209.jpeg?io=1&auto=webp&quality=80&fit=bounds&width=248&height=140",
+      "local_path": "assets/image_40_static_bonniernews_se_ba_414d278c-9104-4f73-ab1a-62afc2135209.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/8eba9d6e-db14-41b3-bbf3-ebf9ed3408b4.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_41_static_bonniernews_se_ba_8eba9d6e-db14-41b3-bbf3-ebf9ed3408b4.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/774516c2-8a1e-4ce9-8266-1854cbc73139.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_42_static_bonniernews_se_ba_774516c2-8a1e-4ce9-8266-1854cbc73139.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/c15f9edb-9f02-4314-b908-a05cf26f6232.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_43_static_bonniernews_se_ba_c15f9edb-9f02-4314-b908-a05cf26f6232.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/d245b45f-5184-42fa-b1a9-68b56e34a158.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_44_static_bonniernews_se_ba_d245b45f-5184-42fa-b1a9-68b56e34a158.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/a86abaeb-b365-46bc-a04b-d164f96996cb.jpeg?io=1&auto=webp&quality=80&width=248&crop=16:9,smart",
+      "local_path": "assets/image_45_static_bonniernews_se_ba_a86abaeb-b365-46bc-a04b-d164f96996cb.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/91e75ee2-0abc-4e53-8421-78e769b48a1e.jpeg?io=1&auto=webp&quality=80&fit=bounds&width=248&height=140",
+      "local_path": "assets/image_46_static_bonniernews_se_ba_91e75ee2-0abc-4e53-8421-78e769b48a1e.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/fc66f6d8-85b7-43dc-a32a-85369ded30a2.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_47_static_bonniernews_se_ba_fc66f6d8-85b7-43dc-a32a-85369ded30a2.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/4d0c58c5-ce91-4b4e-9504-cee3af48ab68.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_48_static_bonniernews_se_ba_4d0c58c5-ce91-4b4e-9504-cee3af48ab68.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/97672baf-9406-404f-976d-8c8880112ff0.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_49_static_bonniernews_se_ba_97672baf-9406-404f-976d-8c8880112ff0.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/d8b7213f-1930-4db8-9143-871ff4b5d894.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_50_static_bonniernews_se_ba_d8b7213f-1930-4db8-9143-871ff4b5d894.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/159fbc04-6b0f-4e96-8788-fbe19a716311.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_51_static_bonniernews_se_ba_159fbc04-6b0f-4e96-8788-fbe19a716311.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/13748dc1-d52f-407d-af2c-b0bfb9cea80c.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_52_static_bonniernews_se_ba_13748dc1-d52f-407d-af2c-b0bfb9cea80c.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/0e078b03-88c0-434d-8cf7-eeeab27c9a6a.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_53_static_bonniernews_se_ba_0e078b03-88c0-434d-8cf7-eeeab27c9a6a.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/jrfp7nxfrjz75bpaonyieqa52q7jikc2wydqkgllikfnz374nvha-1154x3000.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_54_static_bonniernews_se_gcs_bilder_dn-author_jrfp7nxfrjz75bpaonyieqa52q7jikc2wydqkgllikfnz374nvha-1154x3000.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/8aa64a9b-9923-4807-9076-f99f4ab9b86d.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_55_static_bonniernews_se_ba_8aa64a9b-9923-4807-9076-f99f4ab9b86d.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/d82971e9-1f16-40da-afb4-509d472d0248.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_56_static_bonniernews_se_ba_d82971e9-1f16-40da-afb4-509d472d0248.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/4e0c58e7-165a-4294-95ed-1f41143d03ca.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_57_static_bonniernews_se_ba_4e0c58e7-165a-4294-95ed-1f41143d03ca.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/03859eeb-dcf1-4e3d-a415-b3d70ff629f5.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_58_static_bonniernews_se_ba_03859eeb-dcf1-4e3d-a415-b3d70ff629f5.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/vdr3h7yemfo352dp4po5nogrsehpl37k72va6bfjqbjdv4ciyhba-1303x3000.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_59_static_bonniernews_se_gcs_bilder_dn-author_vdr3h7yemfo352dp4po5nogrsehpl37k72va6bfjqbjdv4ciyhba-1303x3000.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/2de1627b-e676-459a-8f0d-c9d1b93be481.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_60_static_bonniernews_se_ba_2de1627b-e676-459a-8f0d-c9d1b93be481.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/d8219b0f-7d29-41b1-a5e8-f0e5c6bd6f89.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_61_static_bonniernews_se_ba_d8219b0f-7d29-41b1-a5e8-f0e5c6bd6f89.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/c56e137c-ce0a-4eaa-8d94-d1554a99ed5a.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_62_static_bonniernews_se_ba_c56e137c-ce0a-4eaa-8d94-d1554a99ed5a.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/418f0504-df47-4144-b9da-409b26380496.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_63_static_bonniernews_se_ba_418f0504-df47-4144-b9da-409b26380496.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/aeaf1219-a557-4779-ae89-9a38a484c3ee.jpeg?io=1&auto=webp&quality=80&width=196&crop=16:9,smart",
+      "local_path": "assets/image_64_static_bonniernews_se_ba_aeaf1219-a557-4779-ae89-9a38a484c3ee.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/73af8365-8b6a-40d1-9e16-b61cc347fcb4.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_65_static_bonniernews_se_ba_73af8365-8b6a-40d1-9e16-b61cc347fcb4.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/3118d902-f473-4a0a-8f55-214c55609d39.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_66_static_bonniernews_se_ba_3118d902-f473-4a0a-8f55-214c55609d39.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-author/y3iu2bppx53sc3ezd7ve66dhozdmzxxzzfeqvbvig2j4voxg3x3q-1190x3000.png?io=1&auto=webp&quality=80&width=144",
+      "local_path": "assets/image_67_static_bonniernews_se_gcs_bilder_dn-author_y3iu2bppx53sc3ezd7ve66dhozdmzxxzzfeqvbvig2j4voxg3x3q-1190x3000.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/0f93c0c9-29ee-4101-8674-ab38d1978480.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_68_static_bonniernews_se_ba_0f93c0c9-29ee-4101-8674-ab38d1978480.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/afb8b02b-cdb7-4fc8-8396-f366c54d8c10.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_69_static_bonniernews_se_ba_afb8b02b-cdb7-4fc8-8396-f366c54d8c10.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/caeb3abc-387e-49b7-8841-c80e7d6696e3.jpeg?io=1&auto=webp&quality=80&width=686&crop=16:9,smart",
+      "local_path": "assets/image_70_static_bonniernews_se_ba_caeb3abc-387e-49b7-8841-c80e7d6696e3.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/dagensfyra-ca050f7-512x288.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_71_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_dagensfyra-ca050f7-512x288.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/quiz-acd8051-480x270.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_72_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_quiz-acd8051-480x270.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/korsord-f084a3c-480x270.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_73_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_korsord-f084a3c-480x270.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/sudoku-739270f-480x270.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_74_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_sudoku-739270f-480x270.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/ordroj-69565e4-640x360.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_75_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_ordroj-69565e4-640x360.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/gissaplatsen-6bf3e7c-480x270.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_76_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_gissaplatsen-6bf3e7c-480x270.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-asset/myshornan/minispel-224e611-480x270.png?io=1&auto=webp&quality=80&width=250&crop=16:9,smart",
+      "local_path": "assets/image_77_static_bonniernews_se_gcs_bilder_dn-asset_myshornan_minispel-224e611-480x270.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/7b145a33-f5bc-4230-8565-9b24879d01dd.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_78_static_bonniernews_se_ba_7b145a33-f5bc-4230-8565-9b24879d01dd.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/d446ac5c-4947-46b1-b7bc-47c4ffe2a931.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_79_static_bonniernews_se_ba_d446ac5c-4947-46b1-b7bc-47c4ffe2a931.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ctf/8oayn6airrfy/6WkY2KJrDTGho1NEx4IFqa/fb4e3e53eaf57038382dd92a84627aad/sdlLBue4WBlXYc-nh.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_80_static_bonniernews_se_ctf_8oayn6airrfy_6WkY2KJrDTGho1NEx4IFqa_fb4e3e53eaf57038382dd92a84627aad_sdlLBue4WBlXYc-nh.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ctf/8oayn6airrfy/5RP0qeC7KIOu897tiE6UvY/355bf68de3bc98bfff01cf2dd464a283/saol.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_81_static_bonniernews_se_ctf_8oayn6airrfy_5RP0qeC7KIOu897tiE6UvY_355bf68de3bc98bfff01cf2dd464a283_saol.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ctf/8oayn6airrfy/u2ehAo3qn3OnH9XpTo438/9696532a0b014b6e2a06426f282c4b87/osvinter.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_82_static_bonniernews_se_ctf_8oayn6airrfy_u2ehAo3qn3OnH9XpTo438_9696532a0b014b6e2a06426f282c4b87_osvinter.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ctf/8oayn6airrfy/ExGg7SaQawDVV8flnOWqx/3c125d1eb99ad467c60d6e80ed08d327/MDM83F.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_83_static_bonniernews_se_ctf_8oayn6airrfy_ExGg7SaQawDVV8flnOWqx_3c125d1eb99ad467c60d6e80ed08d327_MDM83F.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ctf/8oayn6airrfy/3jho1nxhM36OPHKxhYUQeq/1b047f2edce7e54ec2d25e9c2a0ca5d0/sdlJPI8NQpAwRA-nh.jpg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_84_static_bonniernews_se_ctf_8oayn6airrfy_3jho1nxhM36OPHKxhYUQeq_1b047f2edce7e54ec2d25e9c2a0ca5d0_sdlJPI8NQpAwRA-nh.jpg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/e34443ab-6af3-4e0c-b52c-724706e6e028.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_85_static_bonniernews_se_ba_e34443ab-6af3-4e0c-b52c-724706e6e028.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/986a8950-0139-40cb-92dd-35ce72b14cd5.jpeg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_86_static_bonniernews_se_ba_986a8950-0139-40cb-92dd-35ce72b14cd5.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/0a95fcd2-de6d-4fc7-a98c-84a5c5a76cc0.jpeg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_87_static_bonniernews_se_ba_0a95fcd2-de6d-4fc7-a98c-84a5c5a76cc0.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/56d33ced-320a-43b7-a749-7f180cda0730.jpeg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_88_static_bonniernews_se_ba_56d33ced-320a-43b7-a749-7f180cda0730.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/d355c473-b0c2-4d28-856b-979b16763906.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_89_static_bonniernews_se_ba_d355c473-b0c2-4d28-856b-979b16763906.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/b6ecc162-fc17-48ee-92d1-d01e9bd8c695.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_90_static_bonniernews_se_ba_b6ecc162-fc17-48ee-92d1-d01e9bd8c695.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/e75dd402-5a9c-493f-9889-6f322964d238.jpeg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_91_static_bonniernews_se_ba_e75dd402-5a9c-493f-9889-6f322964d238.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/69992a0b-3498-432d-bff2-35b66e4f9788.jpeg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_92_static_bonniernews_se_ba_69992a0b-3498-432d-bff2-35b66e4f9788.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/5c1d7819-8c01-47db-adf7-73ab77e0609b.jpeg?io=1&auto=webp&quality=80&width=90&crop=16:9,smart",
+      "local_path": "assets/image_93_static_bonniernews_se_ba_5c1d7819-8c01-47db-adf7-73ab77e0609b.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/3c548224-fdee-486e-b44b-be64472492f3.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_94_static_bonniernews_se_ba_3c548224-fdee-486e-b44b-be64472492f3.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/082c7029-c167-4742-b7df-57b43aefaa1c.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_95_static_bonniernews_se_ba_082c7029-c167-4742-b7df-57b43aefaa1c.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/8035f814-ff76-49f4-9385-11eaa45a682c.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_96_static_bonniernews_se_ba_8035f814-ff76-49f4-9385-11eaa45a682c.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/6f0c2000-2c62-457b-80fc-ec56667c51f6.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_97_static_bonniernews_se_ba_6f0c2000-2c62-457b-80fc-ec56667c51f6.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/gcs/bilder/dn-pages/2026/02/20/DN_20260220_0001-mgw5huw.jpeg?io=1&auto=webp&quality=80&width=204",
+      "local_path": "assets/image_98_static_bonniernews_se_gcs_bilder_dn-pages_2026_02_20_DN_20260220_0001-mgw5huw.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/ba/2ec82779-0627-40b4-adbe-7aaaa3a31212.jpeg?io=1&auto=webp&quality=80&width=300&crop=16:9,smart",
+      "local_path": "assets/image_99_static_bonniernews_se_ba_2ec82779-0627-40b4-adbe-7aaaa3a31212.jpeg",
+      "type": "image"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/video-player/assets/stylesheets/main.min_abe51591539b24c55d5172859835b3ce.css",
+      "local_path": "assets/css_103_static_bonniernews_se_video-player_assets_stylesheets_main.min_abe51591539b24c55d5172859835b3ce.css",
+      "type": "css"
+    },
+    {
+      "original_url": "https://static.bonniernews.se/video-player/assets/js/main.min_ea2ca298ad13932c146ff5ee8e8c3555.js",
+      "local_path": "assets/js_106_static_bonniernews_se_video-player_assets_js_main.min_ea2ca298ad13932c146ff5ee8e8c3555.js",
+      "type": "js"
+    }
+  ],
+  "cdn.dn-static.se": [
+    {
+      "original_url": "https://cdn.dn-static.se/images/rudolf-large-27L3XL6P.png",
+      "local_path": "assets/image_100_cdn_dn-static_se_images_rudolf-large-27L3XL6P.png",
+      "type": "image"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/styles/main.desktop-E5XBDJHP.css",
+      "local_path": "assets/css_101_cdn_dn-static_se_styles_main.desktop-E5XBDJHP.css",
+      "type": "css"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/styles/base-print-H5AMQLUS.css",
+      "local_path": "assets/css_102_cdn_dn-static_se_styles_base-print-H5AMQLUS.css",
+      "type": "css"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/scripts/bn-analytics-utilities-72CLNF3V.js",
+      "local_path": "assets/js_104_cdn_dn-static_se_scripts_bn-analytics-utilities-72CLNF3V.js",
+      "type": "js"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/scripts/main-6PXVMOUT.js",
+      "local_path": "assets/js_105_cdn_dn-static_se_scripts_main-6PXVMOUT.js",
+      "type": "js"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/scripts/advertisement-UUYO4ATF.js",
+      "local_path": "assets/js_108_cdn_dn-static_se_scripts_advertisement-UUYO4ATF.js",
+      "type": "js"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/styles/main.desktop-E5XBDJHP.css",
+      "local_path": "assets/resource_112_cdn_dn-static_se_styles_main.desktop-E5XBDJHP.css",
+      "type": "resource"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/images/favicons/favicon-2VEEOF7N.svg",
+      "local_path": "assets/icon_113_cdn_dn-static_se_images_favicons_favicon-2VEEOF7N.svg",
+      "type": "icon"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/images/favicons/32-NQBIGKWZ.png",
+      "local_path": "assets/icon_114_cdn_dn-static_se_images_favicons_32-NQBIGKWZ.png",
+      "type": "icon"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/images/favicons/16-BMEQRQO5.png",
+      "local_path": "assets/icon_115_cdn_dn-static_se_images_favicons_16-BMEQRQO5.png",
+      "type": "icon"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-Light-YUHAICBS.woff2",
+      "local_path": "assets/font_116_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-Light-YUHAICBS.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-Regular-CVTMYSDX.woff2",
+      "local_path": "assets/font_117_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-Regular-CVTMYSDX.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-Medium-GGZPCGQP.woff2",
+      "local_path": "assets/font_118_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-Medium-GGZPCGQP.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-SemiBold-JDV5ELKX.woff2",
+      "local_path": "assets/font_119_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-SemiBold-JDV5ELKX.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-Bold-OUSRZT7J.woff2",
+      "local_path": "assets/font_120_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-Bold-OUSRZT7J.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-ExtraBold-DKFSWP4Q.woff2",
+      "local_path": "assets/font_121_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-ExtraBold-DKFSWP4Q.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-Black-RUGXRYXP.woff2",
+      "local_path": "assets/font_122_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-Black-RUGXRYXP.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-LightItalic-CFJIGGDU.woff2",
+      "local_path": "assets/font_123_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-LightItalic-CFJIGGDU.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-RegularItalic-XIW76KSZ.woff2",
+      "local_path": "assets/font_124_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-RegularItalic-XIW76KSZ.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-MediumItalic-HJ4YJF45.woff2",
+      "local_path": "assets/font_125_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-MediumItalic-HJ4YJF45.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-SemiBoldItalic-KH6LXBZS.woff2",
+      "local_path": "assets/font_126_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-SemiBoldItalic-KH6LXBZS.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-BoldItalic-M4ASNUDJ.woff2",
+      "local_path": "assets/font_127_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-BoldItalic-M4ASNUDJ.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-ExtraBoldItalic-3VH3QTGL.woff2",
+      "local_path": "assets/font_128_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-ExtraBoldItalic-3VH3QTGL.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSerifHeadline-1-600-BlackItalic-LKWBLEWG.woff2",
+      "local_path": "assets/font_129_cdn_dn-static_se_fonts_DNSerifHeadline-1-600-BlackItalic-LKWBLEWG.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-Light-FUYNQQRS.woff2",
+      "local_path": "assets/font_130_cdn_dn-static_se_fonts_DNSans-1-500-Light-FUYNQQRS.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-Regular-HEEODJWA.woff2",
+      "local_path": "assets/font_131_cdn_dn-static_se_fonts_DNSans-1-500-Regular-HEEODJWA.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-Medium-H4YOCDSV.woff2",
+      "local_path": "assets/font_132_cdn_dn-static_se_fonts_DNSans-1-500-Medium-H4YOCDSV.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-SemiBold-3L4RSENT.woff2",
+      "local_path": "assets/font_133_cdn_dn-static_se_fonts_DNSans-1-500-SemiBold-3L4RSENT.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-Bold-ICX33ZMH.woff2",
+      "local_path": "assets/font_134_cdn_dn-static_se_fonts_DNSans-1-500-Bold-ICX33ZMH.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-Black-L4DPZAGQ.woff2",
+      "local_path": "assets/font_135_cdn_dn-static_se_fonts_DNSans-1-500-Black-L4DPZAGQ.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-LightItalic-HFJXCN2Q.woff2",
+      "local_path": "assets/font_136_cdn_dn-static_se_fonts_DNSans-1-500-LightItalic-HFJXCN2Q.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-RegularItalic-EE2LSQZ7.woff2",
+      "local_path": "assets/font_137_cdn_dn-static_se_fonts_DNSans-1-500-RegularItalic-EE2LSQZ7.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-MediumItalic-KJWMKGEE.woff2",
+      "local_path": "assets/font_138_cdn_dn-static_se_fonts_DNSans-1-500-MediumItalic-KJWMKGEE.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-SemiBoldItalic-HHAKUPDX.woff2",
+      "local_path": "assets/font_139_cdn_dn-static_se_fonts_DNSans-1-500-SemiBoldItalic-HHAKUPDX.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-BoldItalic-335ZRJXB.woff2",
+      "local_path": "assets/font_140_cdn_dn-static_se_fonts_DNSans-1-500-BoldItalic-335ZRJXB.woff2.woff2",
+      "type": "font"
+    },
+    {
+      "original_url": "https://cdn.dn-static.se/fonts/DNSans-1-500-BlackItalic-OUQTV63S.woff2",
+      "local_path": "assets/font_141_cdn_dn-static_se_fonts_DNSans-1-500-BlackItalic-OUQTV63S.woff2.woff2",
+      "type": "font"
+    }
+  ],
+  "tracking.dn.se": [
+    {
+      "original_url": "https://tracking.dn.se/gtm.js?id=GTM-PZ2FZGR&l=dontOverrideArbitraryDnVal",
+      "local_path": "assets/js_107_tracking_dn_se_gtm.js",
+      "type": "js"
+    }
+  ],
+  "securepubads.g.doubleclick.net": [
+    {
+      "original_url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+      "local_path": "assets/js_109_securepubads_g_doubleclick_net_tag_js_gpt.js",
+      "type": "js"
+    }
+  ],
+  "micro.rubiconproject.com": [
+    {
+      "original_url": "https://micro.rubiconproject.com/prebid/dynamic/12954.js",
+      "local_path": "assets/js_110_micro_rubiconproject_com_prebid_dynamic_12954.js",
+      "type": "js"
+    }
+  ],
+  "assets.bonad.io": [
+    {
+      "original_url": "https://assets.bonad.io/bundles/bad.js",
+      "local_path": "assets/js_111_assets_bonad_io_bundles_bad.js",
+      "type": "js"
+    }
+  ]
+}

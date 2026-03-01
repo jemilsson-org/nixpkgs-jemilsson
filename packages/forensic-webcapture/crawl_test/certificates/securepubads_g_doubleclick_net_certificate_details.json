@@ -1,0 +1,28 @@
+{
+  "hostname": "securepubads.g.doubleclick.net",
+  "subject": "<Name(CN=*.g.doubleclick.net)>",
+  "issuer": "<Name(C=US,O=Google Trust Services,CN=WR2)>",
+  "version": "v2",
+  "serial_number": "157830099881185954964644195340420692436",
+  "not_before": "2026-01-26T08:39:20+00:00",
+  "not_after": "2026-04-20T08:39:19+00:00",
+  "signature_algorithm": "sha256WithRSAEncryption",
+  "sha256_fingerprint": "0b589a4cd6c5fae6d0424183480fe7c6874ea2c9c763096089c50f94648046b3",
+  "sha1_fingerprint": "cfa9f064455d2837609363d7171383c453bf3d7c",
+  "san": [
+    "*.g.doubleclick.net",
+    "*.invitemedia.com",
+    "g.doubleclick.net",
+    "googleadservices.com",
+    "*.googleadservices.com",
+    "googlesyndication.com",
+    "*.googlesyndication.com",
+    "*.safeframe.googlesyndication.com",
+    "googletagservices.com",
+    "*.googletagservices.com",
+    "media.admob.com",
+    "mediation.goog",
+    "mediation-att.goog"
+  ],
+  "is_valid": true
+}

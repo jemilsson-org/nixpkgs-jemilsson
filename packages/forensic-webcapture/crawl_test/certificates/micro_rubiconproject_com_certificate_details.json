@@ -1,0 +1,17 @@
+{
+  "hostname": "micro.rubiconproject.com",
+  "subject": "<Name(C=US,ST=California,L=Los Angeles,O=Magnite\\, Inc.,CN=*.rubiconproject.com)>",
+  "issuer": "<Name(C=US,O=DigiCert Inc,CN=DigiCert TLS RSA SHA256 2020 CA1)>",
+  "version": "v2",
+  "serial_number": "7541684179871456151995189276033624949",
+  "not_before": "2025-03-06T00:00:00+00:00",
+  "not_after": "2026-04-03T23:59:59+00:00",
+  "signature_algorithm": "sha256WithRSAEncryption",
+  "sha256_fingerprint": "11669efa8cda003905e9fcc51fc2d9f71c112a7044e0dccc53f5003aebd2953b",
+  "sha1_fingerprint": "db9112dbbff453e2326a5445aa31b984ce1d121a",
+  "san": [
+    "*.rubiconproject.com",
+    "rubiconproject.com"
+  ],
+  "is_valid": true
+}

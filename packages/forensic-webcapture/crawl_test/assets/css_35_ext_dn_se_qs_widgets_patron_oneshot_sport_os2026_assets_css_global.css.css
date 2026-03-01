@@ -1,0 +1,699 @@
+
+
+/* DN Sans – statiska fonter (fallback) */
+@font-face {
+  font-family: DNSansVF;
+  src: url('../fonts/DNSans-1-500-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSansVF;
+  src: url('../fonts/DNSans-1-500-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSansVF ;
+  src: url('../fonts/DNSansItalic-1-500-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSansVF;
+  src: url('../fonts/DNSansItalic-1-500-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* DN Sans – variabel font */
+@font-face {
+  font-family: DNSansVF;
+  src: url('../fonts/DNSans-1-500-Variable.woff2') format('woff2-variations');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSansVF;
+  src: url('../fonts/DNSansItalic-1-500-Variable.woff2') format('woff2-variations');
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* DN Serif Text – statiska fonter (fallback) */
+@font-face {
+  font-family: DNSerifVF;
+  src: url('../fonts/DNSerifText-1-600-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSerifVF;
+  src: url('../fonts/DNSerifText-1-600-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSerifVF;
+  src: url('../fonts/DNSerifText-1-600-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSerifVF;
+  src: url('../fonts/DNSerifText-1-600-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* DN Serif Text – variabel font */
+@font-face {
+  font-family: DNSerifVF;
+  src: url('../fonts/DNSerif-1-600-Variable.woff2') format('woff2-variations');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: DNSerifVF;
+  src: url('../fonts/DNSerifItalic-1-600-Variable.woff2') format('woff2-variations');
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+/* Old style */
+
+@font-face {
+  font-family: DNSans;
+  font-weight: 400;
+  src: url("../fonts/DNSans-1-500-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: DNSans;
+  font-weight: 700;
+  src: url("../fonts/DNSans-1-500-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: DNSans;
+  font-weight: 600;
+  src: url("../fonts/DNSans-1-500-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: DNSans;
+  font-weight: 300;
+  src: url("../fonts/DNSans-1-500-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: PublicoBanner;
+  font-weight: 300;
+  src: url("../fonts/DNSerif-1-600-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: PublicoBanner;
+  font-weight: 700;
+  src: url("../fonts/DNSerif-1-600-Variable.woff2") format('woff2-variations');
+}
+
+@font-face {
+  font-family: PublicoText;
+  font-weight: 700;
+  src: url("../fonts/DNSerif-1-600-Variable.woff2") format('woff2-variations');
+}
+
+
+
+
+
+
+:root {
+  --small-spacing: 10px;
+  --medium-spacing: 18px;
+
+  --text-color-light-mode: #050505;
+  --text-color-dark-mode: #ededed;
+
+  --text-color-light-mode2: #666666;
+  --text-color-dark-mode2: #b8b8b8;
+
+  --text-color-link-dark-mode: #65a0fc;
+  --text-color-link-light-mode: #4373ce;
+
+  --bg-color-dark-mode: #171717;
+  --bg-color-light-mode: #fff;
+  --bg-color-forced-dark-mode: transparent;
+  --bg-color-forced-light-mode: #ffffff;
+
+  --brand-color-dark-mode: #ef7171;
+  --brand-color-light-mode: #da000e;
+
+  --border-color-dark-mode: #ffffff21;
+  --border-color-light-mode: #08080821;
+
+  --border-color-dark-mode2: #ffffff66;
+  --border-color-light-mode2: #08080866;
+
+  --raised-surface-dark-mode: #2b2b2b;
+  --raised-surface-light-mode: #ededed;
+
+  --button-surface-dark-mode: rgba(255, 255, 255, 0.13);
+  --button-surface-light-mode: rgba(8, 8, 8, 0.13);
+
+  --party-color-v: #c00e0d;
+  --party-color-s: #e20614;
+  --party-color-mp: #94c040;
+  --party-color-c: #49b071;
+  --party-color-l: #71caf3;
+  --party-color-m: #3177b2;
+  --party-color-kd: #204493;
+  --party-color-sd: #ebcb44;
+  --party-color-öv: #a4a4a4;
+  --party-color-def: #5a5a5a;
+
+  --party-rgb-color-v: rgba(192, 14, 13, 0.5);
+  --party-rgb-color-s: rgba(226, 6, 20, 0.5);
+  --party-rgb-color-mp: rgba(148, 192, 64, 0.5);
+  --party-rgb-color-c: rgba(73, 176, 113, 0.5);
+  --party-rgb-color-l: rgba(113, 202, 243, 0.5);
+  --party-rgb-color-m: rgba(49, 119, 178, 0.5);
+  --party-rgb-color-kd: rgba(32, 68, 147, 0.5);
+  --party-rgb-color-sd: rgba(235, 203, 68, 0.5);
+  --party-rgb-color-öv: rgba(164, 164, 164, 0.5);
+  --party-rgb-color-def: rgba(90, 90, 90, 0.5);
+}
+.main__dark-mode {
+  --bg-color-dark-mode: transparent;
+  --bg-color-light-mode: transparent;
+}
+
+.main__dark-mode.debug-class {
+  --bg-color-dark-mode: #171717;
+  --bg-color-light-mode: #fff;
+}
+.main__dark-mode.main__padded-top-bottom.debug-class {
+  --bg-color-forced-dark-mode: #050505;
+}
+
+.main__light-mode {
+  --bg-color-dark-mode: transparent;
+  --bg-color-light-mode: transparent;
+}
+
+html,
+body {
+  font-size: 2.1vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: #222;
+  overflow: hidden;
+  font-family: DNSansVF, Georgia, "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+  color: var(--text-color-link-light-mode);
+  text-decoration: none;
+}
+
+.standard-title {
+  font-family: DNSansVF;
+  font-variation-settings: "opsz" 16;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin-bottom: var(--medium-spacing);
+}
+
+.standard-title::before {
+  content: "";
+  margin-bottom: -0.165em;
+  display: table;
+}
+
+.standard-title::after {
+  content: "";
+  margin-top: -0.275em;
+  display: table;
+}
+
+.standard-ingress {
+  font-family: DNSansVF;
+  font-variation-settings: "opsz" 16;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: var(--medium-spacing);
+}
+
+.standard-ingress::before {
+  content: "";
+  margin-bottom: -0.165em;
+  display: table;
+}
+
+.standard-ingress::after {
+  content: "";
+  margin-top: -0.275em;
+  display: table;
+}
+
+.standard-ingress strong {
+  font-weight: 600;
+}
+
+.standard-source {
+  font-family: DNSansVF;
+  font-size: 14px;
+  color: #666;
+  line-height: 120%;
+  font-weight: 400;
+  margin-top: var(--medium-spacing);
+}
+
+.standard-source::before {
+  content: "";
+  margin-bottom: -0.285em;
+  display: table;
+}
+
+.standard-source::after {
+  content: "";
+  margin-top: -0.275em;
+  display: table;
+}
+
+.standard-source strong {
+  font-weight: 600;
+}
+
+.standard-subheading-title {
+  font-weight: 600;
+}
+
+.standard-subheading-title strong {
+  font-weight: 600;
+}
+
+.standard-subheading-ingress {
+  font-weight: 400;
+}
+
+.standard-subheading-ingress strong {
+  font-weight: 600;
+}
+
+.standard-image {
+  image-rendering: optimizeQuality;
+}
+
+.main__dark-mode {
+  color: var(--text-color-dark-mode);
+  background-color: var(--bg-color-dark-mode);
+}
+
+.main__light-mode {
+  color: var(--text-color-light-mode);
+  background-color: var(--bg-color-light-mode);
+}
+
+.main__light-mode.main__padded-top-bottom {
+  color: var(--text-color-light-mode);
+  background-color: var(--bg-color-forced-light-mode);
+}
+
+.main__dark-mode.main__padded-top-bottom {
+  color: var(--text-color-dark-mode);
+  background-color: var(--bg-color-forced-dark-mode);
+}
+
+.main__dark-mode .standard-source {
+  color: #868686;
+}
+
+.main__light-mode .standard-source {
+  color: #767676;
+}
+
+.main__content-wrapper {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.main__full-width {
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
+.main__normal-width {
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
+.main__padded-width {
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.main__padded-top-bottom {
+  padding-top: var(--small-spacing);
+  padding-bottom: var(--small-spacing);
+}
+
+.body__dark-mode {
+  color: var(--text-color-dark-mode);
+  background-color: var(--bg-color-dark-mode);
+}
+
+.body__dark-mode-force {
+  color: var(--text-color-dark-mode);
+  background-color: var(--bg-color-forced-dark-mode) !important;
+}
+
+.body__light-mode {
+  color: var(--text-color-light-mode);
+  background-color: var(--bg-color-light-mode);
+}
+
+.main__dark-mode a,
+.main__dark-mode a:link,
+.main__dark-mode a:visited,
+.main__dark-mode a:hover {
+  color: var(--text-color-link-dark-mode);
+  text-decoration: none;
+}
+
+/* Dynamic fontsize */
+@media only screen and (min-width: 395px) {
+  html,
+  body {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  html,
+  body {
+    font-size: 1.8vw;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  html,
+  body {
+    font-size: 8.81667px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    background-color: transparent !important;
+  }
+}
+
+
+
+.DN-Text {
+  font-family: DNSansVF;
+  font-variation-settings: "opsz" 16;
+  font-size: 1.82rem;
+  line-height: 3.7rem;
+  font-weight: 400;
+  letter-spacing: normal;
+
+}
+
+
+.DN-Text-Header {
+  font-family: DNSansVF;
+  font-variation-settings: "opsz" 16;
+  font-size: 1.82rem;
+  line-height: 2.72rem;
+  font-weight: 700;
+  letter-spacing: normal;
+
+}
+
+.DN-Text .Text-Bold {
+  font-weight: 700;
+}
+
+.DN-Text .Text-Semi {
+  font-weight: 600;
+}
+.DN-Text-Number {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+
+/* Klasser for inline html i widgets, främst i ingress */
+
+.DN-Plupp {
+  --plupp-färg: #da000d;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 25px;
+  vertical-align: bottom;
+  display: inline-flex;
+  color: var(--plupp-färg);
+  -webkit-text-stroke: 1px var(--plupp-färg);
+}
+
+.DN-Plupp-Rits {
+  --plupp-färg: #da000d;
+  --plupp-rits-färg: #767676;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 25px;
+  vertical-align: bottom;
+  display: inline-flex;
+  color: var(--plupp-färg);
+  -webkit-text-stroke: 1px var(--plupp-rits-färg);
+}
+
+.DN-Plupp-Number {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 15px;
+  margin-right: 5px;
+  line-height: 18px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number10 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 10px;
+  margin-right: 5px;
+  line-height: 12px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number12 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 12px;
+  margin-right: 5px;
+  line-height: 14px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number14 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 14px;
+  margin-right: 5px;
+  line-height: 18px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number16 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 16px;
+  margin-right: 5px;
+  line-height: 20px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number18 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 18px;
+  margin-right: 5px;
+  line-height: 21px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number20 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 20px;
+  margin-right: 5px;
+  line-height: 22px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+.DN-Plupp-Number22 {
+  --plupp-färg: #da000d;
+  --plupp-text-färg: #ffffff;
+  --plupp-rits-färg: transparent;
+  font-size: 22px;
+  margin-right: 5px;
+  line-height: 24px;
+  display: inline-block;
+  background: var(--plupp-färg);
+  border-radius: 50%;
+  font-weight: 600;
+  color: var(--plupp-text-färg);
+  border: 1px solid var(--plupp-rits-färg);
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-feature-settings: "tnum";
+}
+
+.DN-Mark {
+  --mark-färg: #ffe600;
+  --mark-text-färg: #000000;
+  background: var(--mark-färg);
+  color: var(--mark-text-färg);
+}
+
+.DN-Mellanrum-Medium {
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+}
+.DN-Mellanrum-Litet {
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+}
+
+HR.mini {
+  display: block;
+  margin:0;
+  padding: 0;
+  height: 8px;
+  border: 0px solid #000;
+}
+HR.spacing {
+  display: block;
+  margin:0;
+  padding: 0;
+  height: 0px;
+  border: 0px solid #000;
+}
+
+
+.eu-special {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.swiper-container-horizontal > .swiper-pagination-progressbar {
+  height: 0px !important;
+}

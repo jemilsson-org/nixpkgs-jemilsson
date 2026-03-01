@@ -1,0 +1,121 @@
+{
+  "capture_id": "505c61fe-3987-4ef7-bd4a-b755101aaec9",
+  "capture_time_utc": "2026-02-20T15:29:40.596799+00:00",
+  "capture_time_local": "2026-02-20T16:29:40.596805",
+  "url": "https://www.dn.se/",
+  "hostname": "www.dn.se",
+  "browser_profile": "chrome",
+  "system": {
+    "sysname": "Linux",
+    "nodename": "jester",
+    "release": "6.12.68",
+    "version": "#1-NixOS SMP PREEMPT_DYNAMIC Fri Jan 30 09:28:49 UTC 2026",
+    "machine": "x86_64"
+  },
+  "headers_used": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept-Encoding": "identity",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Connection": "keep-alive",
+    "Accept-Language": "en-US,en;q=0.9",
+    "DNT": "1",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Cache-Control": "max-age=0",
+    "sec-ch-ua": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\""
+  },
+  "tls_certificate": {
+    "subject": "<Name(CN=www.dn.se)>",
+    "issuer": "<Name(C=US,O=Let's Encrypt,CN=R12)>",
+    "version": "v3",
+    "serial_number": "563955948120967850511083339475736035555275",
+    "not_before": "2026-01-19T02:52:59+00:00",
+    "not_after": "2026-04-19T02:52:58+00:00",
+    "signature_algorithm": "sha256WithRSAEncryption",
+    "sha256_fingerprint": "14e29906e4f1e54d72ed6d71978e1b182a9390e7d0dc2574fb29e24a727e75b9",
+    "sha1_fingerprint": "fe25098a6f762b30f27edc38cf5f9275391400b5",
+    "san": [
+      "www.dn.se"
+    ],
+    "is_valid": true
+  },
+  "dns_records": {
+    "A": [
+      "199.232.173.91"
+    ],
+    "AAAA": [
+      "2a04:4e42:6b::347"
+    ]
+  },
+  "page_capture": {
+    "status_code": 200,
+    "encoding": "utf-8",
+    "content_length": 1012067,
+    "headers": {
+      "Connection": "keep-alive",
+      "Content-Length": "1012067",
+      "content-security-policy": "frame-ancestors 'self' *.dn.se *.retriever-info.com",
+      "x-cloud-trace-context": "e1730e8c7d3334f94947efca4f1b68bd",
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "no-store, private",
+      "accept-ranges": "bytes",
+      "etag": "W/\"fcc67-o1nO+GNQdoDPpv38d0hqep2yBVg\"",
+      "age": "107",
+      "Strict-Transport-Security": "max-age=31536000",
+      "Date": "Fri, 20 Feb 2026 15:29:40 GMT",
+      "Vary": "Accept-Encoding,User-Agent",
+      "Set-Cookie": "weight=20; path=/; expires=Thu, 21 May 2026 15:29:40 GMT; domain=.dn.se",
+      "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+    },
+    "title": "Dagens Nyheter \u2013 senaste nyheterna fr\u00e5n Sverige och v\u00e4rlden",
+    "meta_tags": {
+      "viewport": "width=device-width, initial-scale=1",
+      "format-detection": "telephone=no",
+      "description": "Dagens Nyheter \u2013 en trov\u00e4rdig och kvalitativ nyhetsk\u00e4lla med prisad bildjournalistik och granskningar som g\u00f6r skillnad.",
+      "msapplication-config": "/browserconfig.xml",
+      "robots": "noarchive",
+      "navId": "dn.section.nyheter",
+      "bad:device": "desktop",
+      "bad:theProgram": "true",
+      "bad:hostname": "dn.se",
+      "bad:abTest": "20",
+      "bad:isLoggedIn": "false",
+      "bad:isPayingCustomer": "false",
+      "bad:pageType": "frontpage",
+      "og:type": "website",
+      "og:url": "https://www.dn.se/",
+      "og:title": "Dagens Nyheter",
+      "og:description": "Dagens Nyheter \u2013 en trov\u00e4rdig och kvalitativ nyhetsk\u00e4lla med prisad bildjournalistik och granskningar som g\u00f6r skillnad.",
+      "og:image": "https://cdn.dn-static.se/images/dn-black-large-5C6FPLBE.png",
+      "og:image:width": "1200",
+      "og:image:height": "630",
+      "twitter:title": "Dagens Nyheter",
+      "twitter:description": "Dagens Nyheter \u2013 en trov\u00e4rdig och kvalitativ nyhetsk\u00e4lla med prisad bildjournalistik och granskningar som g\u00f6r skillnad.",
+      "twitter:image": "https://cdn.dn-static.se/images/dn-black-large-5C6FPLBE.png",
+      "og:locale": "sv_se",
+      "og:site_name": "DN.se",
+      "fb:app_id": "733350383391029",
+      "fb:pages": "321961491679,1587019821566762,166914446674810,950906441684654,1598035617119286",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@dagensnyheter"
+    },
+    "server_date": "Fri, 20 Feb 2026 15:29:40 GMT",
+    "response_time_seconds": 0.139235
+  },
+  "assets_captured": 142,
+  "domains_captured": [
+    "static.bonniernews.se",
+    "cdn.dn-static.se",
+    "tracking.dn.se",
+    "securepubads.g.doubleclick.net",
+    "micro.rubiconproject.com",
+    "assets.bonad.io"
+  ],
+  "screenshot": false,
+  "file_count": 153
+}

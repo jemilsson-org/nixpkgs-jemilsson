@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Forensic Capture Navigation - www.dn.se</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .header { background: #2c3e50; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .header h1 { margin: 0; }
+        .stats { background: white; padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 4px solid #3498db; }
+        .pages { background: white; border-radius: 5px; overflow: hidden; }
+        .page { padding: 15px; border-bottom: 1px solid #eee; }
+        .page:last-child { border-bottom: none; }
+        .page:hover { background: #f8f9fa; }
+        .page-url { font-weight: bold; color: #2c3e50; text-decoration: none; }
+        .page-url:hover { color: #3498db; }
+        .page-info { font-size: 0.9em; color: #666; margin-top: 5px; }
+        .page-info span { margin-right: 15px; }
+        .depth-0 { border-left: 4px solid #e74c3c; }
+        .depth-1 { border-left: 4px solid #f39c12; }
+        .depth-2 { border-left: 4px solid #f1c40f; }
+        .depth-3+ { border-left: 4px solid #27ae60; }
+        .forensic-note { background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 5px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🕷️ Forensic Web Capture Navigation</h1>
+        <p>Domain: <strong>www.dn.se</strong> | Captured: 2026-02-20 17:23:30</p>
+    </div>
+    
+    <div class="stats">
+        <strong>📊 Capture Statistics:</strong><br>
+        Pages captured: 2 | 
+        Max depth: 1 | 
+        Total size: 804,948 bytes
+    </div>
+    
+    <div class="pages">
+        <div class="page depth-0">
+            <a href="/pages/index.html" class="page-url">https://www.dn.se/</a>
+            <div class="page-info">
+                <span>🔗 Depth: 0</span>
+                <span>📄 Status: 200</span>
+                <span>📊 Size: 469,744 bytes</span>
+                <span>🕐 Captured: 2026-02-20T16:23:29</span>
+            </div>
+        </div>
+        <div class="page depth-1">
+            <a href="/pages/app.html" class="page-url">https://www.dn.se/app/</a>
+            <div class="page-info">
+                <span>🔗 Depth: 1</span>
+                <span>📄 Status: 200</span>
+                <span>📊 Size: 335,204 bytes</span>
+                <span>🕐 Captured: 2026-02-20T16:23:30</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="forensic-note">
+        <strong>⚖️ Forensic Note:</strong> This is a complete forensic capture with cryptographic integrity verification. 
+        All pages and assets have been captured with TLS certificates as proof of origin. 
+        Run <code>sha256sum -c SHA256SUMS.txt</code> to verify integrity.
+    </div>
+</body>
+</html>

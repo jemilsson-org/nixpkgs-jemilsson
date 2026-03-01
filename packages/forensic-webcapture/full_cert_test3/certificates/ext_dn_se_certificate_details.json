@@ -1,0 +1,16 @@
+{
+  "hostname": "ext.dn.se",
+  "subject": "<Name(CN=ext.dn.se)>",
+  "issuer": "<Name(C=US,O=Let's Encrypt,CN=R13)>",
+  "version": "v2",
+  "serial_number": "574693436090511135383058417210018348804791",
+  "not_before": "2026-01-14T22:13:01+00:00",
+  "not_after": "2026-04-14T22:13:00+00:00",
+  "signature_algorithm": "sha256WithRSAEncryption",
+  "sha256_fingerprint": "1ec1b930fade5bc31b545fe684945957a74093c1dd64400dc391737c01eedbea",
+  "sha1_fingerprint": "94e7ff75bb5869d0317e074996cef5dd5b496b9f",
+  "san": [
+    "ext.dn.se"
+  ],
+  "is_valid": true
+}

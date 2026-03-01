@@ -1,0 +1,16 @@
+{
+  "Connection": "keep-alive",
+  "Content-Length": "1007076",
+  "content-security-policy": "frame-ancestors 'self' *.dn.se *.retriever-info.com",
+  "x-cloud-trace-context": "049e2ac3aa378f78ea1fccc2048f0309",
+  "content-type": "text/html; charset=utf-8",
+  "cache-control": "no-store, private",
+  "accept-ranges": "bytes",
+  "etag": "W/\"fb898-ThPhQAfEf2FDQ3UtbSnecW5a/QA\"",
+  "age": "11",
+  "Strict-Transport-Security": "max-age=31536000",
+  "Date": "Fri, 20 Feb 2026 15:56:25 GMT",
+  "Vary": "Accept-Encoding,User-Agent",
+  "Set-Cookie": "weight=16; path=/; expires=Thu, 21 May 2026 15:56:25 GMT; domain=.dn.se",
+  "alt-svc": "h3=\":443\";ma=86400,h3-29=\":443\";ma=86400,h3-27=\":443\";ma=86400"
+}

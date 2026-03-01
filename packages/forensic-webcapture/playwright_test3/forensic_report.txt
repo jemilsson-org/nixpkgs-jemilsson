@@ -1,0 +1,68 @@
+FORENSIC WEB CAPTURE REPORT
+===========================
+
+Capture ID: e4ad9f92-8c28-447a-9754-49fb78863359
+Date/Time (UTC): 2026-02-20T15:49:02.697735+00:00
+Date/Time (Local): 2026-02-20T16:49:02.697743
+Target URL: https://www.dn.se/
+Hostname: www.dn.se
+
+TLS CERTIFICATE VALIDATION
+--------------------------
+✓ Certificate captured successfully
+  Subject: <Name(CN=www.dn.se)>
+  Issuer: <Name(C=US,O=Let's Encrypt,CN=R12)>
+  SHA256 Fingerprint: 14e29906e4f1e54d72ed6d71978e1b182a9390e7d0dc2574fb29e24a727e75b9
+  Valid: True
+  Not Before: 2026-01-19T02:52:59+00:00
+  Not After: 2026-04-19T02:52:58+00:00
+
+DNS RESOLUTION
+--------------
+A: 199.232.173.91
+AAAA: 2a04:4e42:6b::347
+
+BROWSER SPOOFING
+----------------
+Profile: chrome
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+
+PAGE CAPTURE
+------------
+Status: 200
+Content Length: 1007650 bytes
+Server Date: Fri, 20 Feb 2026 15:49:03 GMT
+Response Time: 0.24 seconds
+
+FILES CAPTURED
+--------------
+Total Files: 99
+Assets: 89
+Screenshot: No
+
+INTEGRITY VERIFICATION
+---------------------
+SHA256 hashes: SHA256SUMS.txt
+SHA512 hashes: SHA512SUMS.txt
+
+To verify integrity:
+  cd playwright_test3
+  sha256sum -c SHA256SUMS.txt
+  sha512sum -c SHA512SUMS.txt
+
+CHAIN OF CUSTODY
+---------------
+This capture was performed using forensic best practices:
+1. TLS certificates preserved for cryptographic proof of origin
+2. Complete HTTP headers and response captured
+3. Browser spoofing used to obtain authentic server response
+4. All files hashed with SHA256 and SHA512
+5. Timestamps preserved at multiple levels
+
+The TLS certificate provides cryptographic proof that:
+- Content originated from the legitimate server
+- Server was authorized by a Certificate Authority
+- Connection was encrypted and authenticated
+- No man-in-the-middle attack occurred
+
+Generated: 2026-02-20T16:49:23.572952
