@@ -41,6 +41,7 @@
             "fit-web"
             "mcpo"
             "faucet"
+            "graphiti"
           ];
           
           isPythonPackage = name: builtins.elem name pythonPackages;
