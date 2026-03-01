@@ -30,10 +30,26 @@
           isValidPackage = name: 
             builtins.pathExists (packageDir + "/${name}/default.nix");
           validPackages = builtins.filter isValidPackage packageDirs;
+          
+          # Python packages that need buildPythonPackage
+          pythonPackages = [
+            "python-mangum"
+            "pydeconz"
+            "pylgtv"
+            "spotipy"
+            "fit-entire-website"
+            "fit-web"
+            "mcpo"
+            "faucet"
+          ];
+          
+          isPythonPackage = name: builtins.elem name pythonPackages;
         in
           builtins.listToAttrs (map (name: {
             inherit name;
-            value = pkgs.callPackage (packageDir + "/${name}/default.nix") { };
+            value = if isPythonPackage name
+                    then pkgs.python3Packages.callPackage (packageDir + "/${name}/default.nix") { }
+                    else pkgs.callPackage (packageDir + "/${name}/default.nix") { };
           }) validPackages)
       );
 
