@@ -54,9 +54,8 @@ jobs:
       
       - name: Update packages with Goose
         env:
-          VENICE_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
-          VENICE_HOST: https://api.venice.ai
-          VENICE_BASE_PATH: api/v1/chat/completions
+          OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
+          OPENAI_BASE_URL: https://api.venice.ai/api/v1/chat/completions
           GOOSE_PROVIDER: openai
           GOOSE_MODEL: zai-org-glm-5
         run: |
