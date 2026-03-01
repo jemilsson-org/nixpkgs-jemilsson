@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-packages:
-    runs-on: [self-hosted, nixos]
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
@@ -30,12 +30,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
+      - name: Install OpenCode
+        run: |
+          pip install opencode-cli
+      
       - name: Update packages with OpenCode
         env:
           OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
           OPENAI_BASE_URL: https://api.venice.ai/api/v1
         run: |
           # Configure OpenCode
+          mkdir -p ~/.opencode
           cat > ~/.opencode/config.json << EOF
           {
             "providers": [
