@@ -242,7 +242,11 @@ update_package() {
         # Fallback to nix-prefetch-url with GitHub archive
         log_info "$pkg_name: Using nix-prefetch-url (nix-prefetch-github not found)"
         local archive_url="https://github.com/$owner/$repo/archive/$tag.tar.gz"
-        new_hash=$(nix-prefetch-url --unpack "$archive_url" 2>/dev/null || echo "")
+        local base32_hash=$(nix-prefetch-url --unpack "$archive_url" 2>/dev/null || echo "")
+        if [ -n "$base32_hash" ]; then
+            # Convert base32 to SRI format
+            new_hash=$(nix hash convert --hash-algo sha256 --to sri "$base32_hash" 2>/dev/null || echo "")
+        fi
     fi
 
     if [ -z "$new_hash" ]; then
