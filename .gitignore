@@ -3,3 +3,10 @@ result-*
 *.pyc
 __pycache__/
 .DS_Store
+
+# Package update logs
+update-packages.log
+updates.txt
+failed-updates.txt
+test-run.log
+*.nix.bak
