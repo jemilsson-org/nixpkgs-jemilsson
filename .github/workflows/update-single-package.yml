@@ -32,76 +32,58 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Update package directly
+      - name: Configure Goose for Venice.ai
+        run: |
+          mkdir -p ~/.config/goose
+          cat > ~/.config/goose/config.yaml << 'EOF'
+          providers:
+            venice:
+              type: openai
+              base_url: https://api.venice.ai/api/v1
+              model: zai-org-glm-5
+          default_provider: venice
+          keyring: false
+          GOOSE_DISABLE_KEYRING: true
+          GOOSE_TELEMETRY_ENABLED: false
+          extensions: {}
+          EOF
+
+      - name: Update single package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VENICE_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
+          USE_LLM_FIXES: true
         run: |
           PACKAGE="${{ github.event.inputs.package }}"
-          PKG_DIR="packages/$PACKAGE"
-          
-          if [ ! -f "$PKG_DIR/default.nix" ]; then
-            echo "Package $PACKAGE not found in packages/"
+
+          # Verify package exists
+          if [ ! -f "packages/$PACKAGE/default.nix" ]; then
+            echo "Error: Package '$PACKAGE' not found in packages/"
             exit 1
           fi
-          
-          echo "Updating $PACKAGE..."
-          
-          # Extract current version
-          current_version=$(grep -Po '(?<=version = ")[^"]+' "$PKG_DIR/default.nix" 2>/dev/null || echo "unknown")
-          
-          # Get GitHub info if applicable
-          if grep -q "fetchFromGitHub" "$PKG_DIR/default.nix"; then
-            owner=$(grep -Po '(?<=owner = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
-            repo=$(grep -Po '(?<=repo = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
-            
-            if [ -n "$owner" ] && [ -n "$repo" ]; then
-              # Get latest release
-              latest_release=$(curl -s "https://api.github.com/repos/$owner/$repo/releases/latest" | jq -r '.tag_name // empty')
-              
-              if [ -z "$latest_release" ]; then
-                # Try tags
-                latest_release=$(curl -s "https://api.github.com/repos/$owner/$repo/tags" | jq -r '.[0].name // empty')
-              fi
-              
-              if [ -n "$latest_release" ]; then
-                # Skip pre-releases
-                if [[ ! "$latest_release" =~ (alpha|beta|rc|pre|dev|nightly) ]]; then
-                  latest_version="${latest_release#v}"
-                  
-                  if [ "$current_version" != "$latest_version" ] && [ "$current_version" != "$latest_release" ]; then
-                    echo "Updating $PACKAGE: $current_version -> $latest_version"
-                    
-                    # Get new hash
-                    new_hash=$(nix-prefetch-github "$owner" "$repo" --rev "$latest_release" 2>/dev/null | jq -r .hash)
-                    
-                    if [ -n "$new_hash" ]; then
-                      # Update version
-                      sed -i "s/version = \"$current_version\"/version = \"$latest_version\"/" "$PKG_DIR/default.nix"
-                      
-                      # Update rev
-                      sed -i "s/rev = \".*\"/rev = \"$latest_release\"/" "$PKG_DIR/default.nix"
-                      
-                      # Update hash
-                      old_hash=$(grep -Po '(?<=hash = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
-                      if [ -n "$old_hash" ]; then
-                        sed -i "s|hash = \"$old_hash\"|hash = \"$new_hash\"|" "$PKG_DIR/default.nix"
-                      fi
-                      
-                      # Test build
-                      if nix build ".#packages.x86_64-linux.$PACKAGE" 2>/dev/null; then
-                        git add "$PKG_DIR/default.nix"
-                        git commit -m "$PACKAGE: $current_version -> $latest_version"
-                        echo "Successfully updated $PACKAGE"
-                      else
-                        echo "Build failed for $PACKAGE"
-                        git checkout -- "$PKG_DIR/default.nix"
-                      fi
-                    fi
-                  else
-                    echo "$PACKAGE is already up to date"
-                  fi
-                fi
-              fi
-            fi
-          fi
+
+          echo "Updating $PACKAGE with AI-enhanced script..."
+          chmod +x update-packages-ai.sh
+
+          # Create a filtered version that only processes the specified package
+          cat > update-single.sh << 'SCRIPT'
+          #!/usr/bin/env nix-shell
+          #!nix-shell -i bash -p bash curl jq nix-prefetch-github goose
+
+          # Source the main update script's functions
+          source ./update-packages-ai.sh
+
+          # Override the Phase 1 to only check the specified package
+          PACKAGE="$1"
+          log_info "=== Checking $PACKAGE for updates ==="
+          check_for_updates "packages/$PACKAGE/" || exit 0
+
+          # Phase 2 continues normally with updates.txt
+          SCRIPT
+
+          chmod +x update-single.sh
+          ./update-single.sh "$PACKAGE"
       
       - name: Create Pull Request
         if: success()
