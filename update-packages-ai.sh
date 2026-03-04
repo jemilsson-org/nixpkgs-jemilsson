@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p bash curl jq nix-prefetch-github goose
+#!nix-shell -I nixpkgs=channel:nixpkgs-unstable -i bash -p bash curl jq nix-prefetch-github goose
 set -euo pipefail
 
 # Colors for output

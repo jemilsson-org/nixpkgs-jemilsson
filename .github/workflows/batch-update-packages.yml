@@ -29,6 +29,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Install dependencies
+        run: |
+          nix-env -iA nixpkgs.nix-prefetch-github nixpkgs.goose nixpkgs.jq
+
       - name: Configure Goose for Venice.ai
         run: |
           mkdir -p ~/.config/goose
@@ -53,7 +57,7 @@ jobs:
           USE_LLM_FIXES: true
         run: |
           chmod +x update-packages-ai.sh
-          ./update-packages-ai.sh
+          bash update-packages-ai.sh
 
       - name: Create Pull Request
         if: success()

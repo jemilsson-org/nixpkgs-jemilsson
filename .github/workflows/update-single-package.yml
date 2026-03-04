@@ -32,6 +32,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
+      - name: Install dependencies
+        run: |
+          nix-env -iA nixpkgs.nix-prefetch-github nixpkgs.goose nixpkgs.jq
+
       - name: Configure Goose for Venice.ai
         run: |
           mkdir -p ~/.config/goose
@@ -68,8 +72,8 @@ jobs:
 
           # Create a filtered version that only processes the specified package
           cat > update-single.sh << 'SCRIPT'
-          #!/usr/bin/env nix-shell
-          #!nix-shell -i bash -p bash curl jq nix-prefetch-github goose
+          #!/usr/bin/env bash
+          set -euo pipefail
 
           # Source the main update script's functions
           source ./update-packages-ai.sh
@@ -83,7 +87,7 @@ jobs:
           SCRIPT
 
           chmod +x update-single.sh
-          ./update-single.sh "$PACKAGE"
+          bash update-single.sh "$PACKAGE"
       
       - name: Create Pull Request
         if: success()
