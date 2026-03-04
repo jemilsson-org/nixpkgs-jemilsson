@@ -1,0 +1,209 @@
+name: Batch Update Packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 2' # Runs Tuesdays at 03:00 UTC
+
+jobs:
+  list-packages:
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.list.outputs.packages }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: List packages
+        id: list
+        run: |
+          packages=$(ls -1 packages/ | jq -R -s -c 'split("\n")[:-1]')
+          echo "packages=$packages" >> $GITHUB_OUTPUT
+          echo "Found packages: $packages"
+  
+  update-package:
+    needs: list-packages
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: ${{ fromJson(needs.list-packages.outputs.packages) }}
+      max-parallel: 2  # Process only 2 packages at a time to avoid API limits
+      fail-fast: false # Continue with other packages if one fails
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Check and update ${{ matrix.package }}
+        run: |
+          PACKAGE="${{ matrix.package }}"
+          PKG_DIR="packages/$PACKAGE"
+          
+          if [ ! -f "$PKG_DIR/default.nix" ]; then
+            echo "No default.nix for $PACKAGE, skipping"
+            exit 0
+          fi
+          
+          echo "Checking $PACKAGE for updates..."
+          
+          # Extract current version
+          current_version=$(grep -Po '(?<=version = ")[^"]+' "$PKG_DIR/default.nix" 2>/dev/null || echo "unknown")
+          
+          if [ "$current_version" = "unknown" ]; then
+            current_version=$(grep -Po '(?<=version = '\'')[^'\'']+' "$PKG_DIR/default.nix" 2>/dev/null || echo "unknown")
+          fi
+          
+          if [ "$current_version" = "unknown" ]; then
+            echo "Could not determine version for $PACKAGE"
+            exit 0
+          fi
+          
+          # Check for GitHub sources
+          if grep -q "fetchFromGitHub" "$PKG_DIR/default.nix"; then
+            owner=$(grep -Po '(?<=owner = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
+            repo=$(grep -Po '(?<=repo = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
+            
+            # Handle special cases
+            if [ "$repo" = "\${pname}" ]; then
+              repo="$PACKAGE"
+            fi
+            
+            if [ -n "$owner" ] && [ -n "$repo" ]; then
+              echo "Checking GitHub $owner/$repo for updates..."
+              
+              # Get latest release
+              latest_release=$(curl -s "https://api.github.com/repos/$owner/$repo/releases/latest" | jq -r '.tag_name // empty')
+              
+              if [ -z "$latest_release" ]; then
+                # Try tags if no releases
+                latest_release=$(curl -s "https://api.github.com/repos/$owner/$repo/tags" | jq -r '.[0].name // empty')
+              fi
+              
+              if [ -n "$latest_release" ]; then
+                # Skip pre-releases and betas
+                if [[ "$latest_release" =~ (alpha|beta|rc|pre|dev|nightly) ]]; then
+                  echo "Skipping pre-release for $PACKAGE: $latest_release"
+                  exit 0
+                fi
+                
+                # Clean up version for comparison
+                latest_version="${latest_release#v}"
+                
+                # Check if update needed (handle git hash versions)
+                if [[ "$current_version" =~ ^[a-f0-9]{40}$ ]] || [[ "$current_version" =~ ^[a-f0-9]{7,}$ ]]; then
+                  echo "$PACKAGE uses git hash version, updating to $latest_version"
+                  needs_update=true
+                elif [ "$current_version" != "$latest_version" ] && [ "v$current_version" != "$latest_release" ] && [ "$current_version" != "$latest_release" ]; then
+                  echo "$PACKAGE needs update: $current_version -> $latest_version"
+                  needs_update=true
+                else
+                  echo "$PACKAGE is up to date"
+                  exit 0
+                fi
+                
+                if [ "$needs_update" = true ]; then
+                  # Get new hash
+                  echo "Getting hash for $latest_release..."
+                  new_hash=$(nix-prefetch-github "$owner" "$repo" --rev "$latest_release" 2>/dev/null | jq -r .hash)
+                  
+                  if [ -z "$new_hash" ]; then
+                    echo "Failed to get hash for $PACKAGE"
+                    exit 0
+                  fi
+                  
+                  echo "New hash: $new_hash"
+                  
+                  # Backup original file
+                  cp "$PKG_DIR/default.nix" "$PKG_DIR/default.nix.bak"
+                  
+                  # Update version
+                  sed -i "s/version = \"$current_version\"/version = \"$latest_version\"/" "$PKG_DIR/default.nix"
+                  sed -i "s/version = '$current_version'/version = '$latest_version'/" "$PKG_DIR/default.nix"
+                  
+                  # Update rev
+                  sed -i "s/rev = \".*\"/rev = \"$latest_release\"/" "$PKG_DIR/default.nix"
+                  sed -i "s/rev = \"\${version}\"/rev = \"$latest_release\"/" "$PKG_DIR/default.nix"
+                  
+                  # Update hash
+                  old_hash=$(grep -Po '(?<=hash = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
+                  if [ -n "$old_hash" ]; then
+                    sed -i "s|hash = \"$old_hash\"|hash = \"$new_hash\"|" "$PKG_DIR/default.nix"
+                  else
+                    old_hash=$(grep -Po '(?<=sha256 = ")[^"]+' "$PKG_DIR/default.nix" | head -1)
+                    if [ -n "$old_hash" ]; then
+                      sed -i "s|sha256 = \"$old_hash\"|sha256 = \"$new_hash\"|" "$PKG_DIR/default.nix"
+                    fi
+                  fi
+                  
+                  # Test build
+                  echo "Testing build for $PACKAGE..."
+                  if nix build ".#packages.x86_64-linux.$PACKAGE" 2>/dev/null; then
+                    echo "Build successful!"
+                    git add "$PKG_DIR/default.nix"
+                    git commit -m "$PACKAGE: $current_version -> $latest_version"
+                    echo "Committed update for $PACKAGE"
+                  else
+                    echo "Build failed for $PACKAGE, reverting"
+                    mv "$PKG_DIR/default.nix.bak" "$PKG_DIR/default.nix"
+                  fi
+                  
+                  rm -f "$PKG_DIR/default.nix.bak"
+                fi
+              fi
+            fi
+          fi
+      
+      - name: Push changes
+        if: success()
+        run: |
+          if git log --oneline -1 | grep -q "${{ matrix.package }}:"; then
+            git push origin HEAD
+          fi
+  
+  create-pr:
+    needs: update-package
+    runs-on: ubuntu-latest
+    if: always()
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: batch package updates'
+          title: 'Automated Batch Package Updates'
+          body: |
+            ## Automated Package Updates
+            
+            This PR contains automated version updates for multiple packages.
+            
+            The updates were processed in batches to avoid API rate limits.
+            
+            🤖 Generated by batch update workflow
+          branch: batch-package-updates
+          delete-branch: true
+          labels: |
+            dependencies
+            automated
