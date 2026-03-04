@@ -35,6 +35,7 @@ jobs:
       - name: Install dependencies
         run: |
           nix profile install nixpkgs#nix-prefetch-github nixpkgs#goose nixpkgs#jq
+          echo "$HOME/.nix-profile/bin" >> $GITHUB_PATH
 
       - name: Configure Goose for Venice.ai
         run: |
