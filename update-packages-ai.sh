@@ -70,15 +70,14 @@ check_dependencies() {
 
     # Check GitHub API rate limit
     local rate_limit_json
-    local curl_opts="-sf"
 
     # Use GitHub token if available
     if [ -n "${GITHUB_TOKEN:-}" ]; then
-        curl_opts="$curl_opts -H \"Authorization: Bearer $GITHUB_TOKEN\""
         log_info "Using authenticated GitHub API (higher rate limits)"
+        rate_limit_json=$(curl -sf -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/rate_limit" 2>/dev/null || echo "")
+    else
+        rate_limit_json=$(curl -sf "https://api.github.com/rate_limit" 2>/dev/null || echo "")
     fi
-
-    rate_limit_json=$(curl $curl_opts "https://api.github.com/rate_limit" 2>/dev/null || echo "")
     if [ -n "$rate_limit_json" ]; then
         local remaining
         remaining=$(echo "$rate_limit_json" | jq -r '.rate.remaining' 2>/dev/null || echo "unknown")
@@ -158,14 +157,13 @@ check_for_updates() {
     # Get latest release from GitHub API
     local latest_release=""
     local api_response
-    local curl_opts="-sf"
 
     # Use GitHub token if available for higher rate limits
     if [ -n "${GITHUB_TOKEN:-}" ]; then
-        curl_opts="$curl_opts -H \"Authorization: Bearer $GITHUB_TOKEN\""
+        api_response=$(curl -sf -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/$owner/$repo/releases/latest" 2>/dev/null || true)
+    else
+        api_response=$(curl -sf "https://api.github.com/repos/$owner/$repo/releases/latest" 2>/dev/null || true)
     fi
-
-    api_response=$(curl $curl_opts "https://api.github.com/repos/$owner/$repo/releases/latest" 2>/dev/null || true)
 
     if [ -n "$api_response" ]; then
         latest_release=$(echo "$api_response" | jq -r '.tag_name // empty' 2>/dev/null || true)
@@ -173,7 +171,11 @@ check_for_updates() {
 
     if [ -z "$latest_release" ]; then
         # Try tags if no releases
-        api_response=$(curl $curl_opts "https://api.github.com/repos/$owner/$repo/tags" 2>/dev/null || true)
+        if [ -n "${GITHUB_TOKEN:-}" ]; then
+            api_response=$(curl -sf -H "Authorization: Bearer $GITHUB_TOKEN" "https://api.github.com/repos/$owner/$repo/tags" 2>/dev/null || true)
+        else
+            api_response=$(curl -sf "https://api.github.com/repos/$owner/$repo/tags" 2>/dev/null || true)
+        fi
         if [ -n "$api_response" ]; then
             latest_release=$(echo "$api_response" | jq -r '.[0].name // empty' 2>/dev/null || true)
         fi
