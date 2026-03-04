@@ -30,30 +30,31 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Install Goose CLI
-        run: |
-          mkdir -p /home/runner/.local/bin
-          curl -fsSL https://github.com/block/goose/releases/download/stable/download_cli.sh \
-            | CONFIGURE=false GOOSE_BIN_DIR=/home/runner/.local/bin bash
-          echo "/home/runner/.local/bin" >> $GITHUB_PATH
-      
       - name: Configure Goose for Venice.ai
         run: |
           mkdir -p ~/.config/goose
-          cat <<EOF > ~/.config/goose/config.yaml
-          GOOSE_PROVIDER: venice
-          GOOSE_MODEL: zai-org-glm-5
+          cat > ~/.config/goose/config.yaml << 'EOF'
+          providers:
+            venice:
+              type: openai
+              base_url: https://api.venice.ai/api/v1
+              model: zai-org-glm-5
+          default_provider: venice
           keyring: false
           GOOSE_DISABLE_KEYRING: true
           GOOSE_TELEMETRY_ENABLED: false
           extensions: {}
           EOF
-      
-      - name: Update packages with Goose
+
+      - name: Run AI-enhanced package updates
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VENICE_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
+          OPENAI_API_KEY: ${{ secrets.VENICE_INFERENCE_KEY }}
+          USE_LLM_FIXES: true
         run: |
-          goose run --no-session -t "Review all Nix packages in the packages/ directory and update them to their latest stable versions. For each package that needs updating: 1) Check the current version in default.nix, 2) Find the latest stable release from the upstream source (GitHub releases, PyPI, etc), 3) Update the version number and rev/tag in the default.nix file, 4) Use nix-prefetch-url or nix-prefetch-github to get the correct hash and update it, 5) Test the build with 'nix build .#packages.x86_64-linux.PACKAGENAME', 6) Create a commit with message 'packagename: oldversion -> newversion'. Only update to stable releases, no pre-releases or betas."
+          chmod +x update-packages-ai.sh
+          ./update-packages-ai.sh
       
       - name: Create Pull Request
         if: success()
