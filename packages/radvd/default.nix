@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
     owner = "radvd-project";
     repo = "radvd";
     rev = "v${version}";
-    hash = "sha256-090b8953cq7pvxf8i5wsippsi3zc8jxy559k6jpfjjmbbvl8zlmk";
+    hash = "sha256-s9KP6F6rSumuNDOV4rtE7I+o742al4hc3/dgNkpCCyQ=";
   };
 
   nativeBuildInputs = [ pkg-config bison flex libbsd check autoreconfHook ];

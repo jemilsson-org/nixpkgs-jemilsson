@@ -287,16 +287,17 @@ update_package() {
     if build_output=$(nix build ".#packages.x86_64-linux.$pkg_name" 2>&1); then
         log_success "$pkg_name: Build successful!"
 
-        # Create commit
+        # Create commit (disable GPG signing for automation)
         git add "$pkg_dir/default.nix"
-        if git commit -m "$pkg_name: $old_version -> $new_version"; then
+        if git -c commit.gpgsign=false commit -m "$pkg_name: $old_version -> $new_version"; then
             log_success "$pkg_name: Committed update"
             rm -f "$pkg_dir/default.nix.bak"
             return 0
         else
-            log_warn "$pkg_name: Commit failed (maybe no changes?)"
-            rm -f "$pkg_dir/default.nix.bak"
-            return 0
+            log_error "$pkg_name: Commit failed"
+            # Restore backup on commit failure
+            mv "$pkg_dir/default.nix.bak" "$pkg_dir/default.nix"
+            return 1
         fi
     else
         log_error "$pkg_name: Build failed"
